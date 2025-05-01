@@ -18,7 +18,7 @@ top: 0%;
 background-color: white;
 z-index: 1;
 }
-.Navbar__s1__tittle{
+.Navbar_s1_tittle{
     color: #a435f0;
 }
 .Navbar__s2{
@@ -75,6 +75,14 @@ display: none;
     color: white;
     border-radius: 30px;
     padding: 10px;
+    cursor: pointer;
+    border: solid black 1px;
+}
+.categaries p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: #a435f0;
+    border: solid black 1px;
 }
 .sale-image img{
     width: 100%;
@@ -92,6 +100,20 @@ display: none;
     border: black solid 2px;
     padding: 10px;
     left: 10px;
+    animation-name: Zoom;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+}
+@keyframes Zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .recommended{
     padding: 10px;
