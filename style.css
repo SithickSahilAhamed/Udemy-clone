@@ -44,6 +44,9 @@ z-index: 1;
     gap: 20px;
     padding: 10px;
 }
+.navbar__s4{
+    display: none;
+}
 /* my learning Popup*/
 .mylearning{
     position: relative;
@@ -126,8 +129,9 @@ display: none;
     
 }
 .course-card{
-    width: 350px;
-
+    flex-basis: 20%;
+    flex-grow: 1;
+    margin: 5px;
 }
 .course-card img{
     width: 100%;
@@ -179,3 +183,25 @@ display: none;
     align-items: center;
     margin: 20px;
 }
+
+/* media Queries */
+
+ @media screen and (max-width:800px) {
+    body{
+        font-size: 10px ;
+    }
+ }
+ @media screen and (max-width:600px) {
+    .course-card{
+        flex-basis: 40%;
+    }
+    .categaries{
+        display: none;
+    }
+    .Navbar__s2,.Navbar__s3{
+        display: none;  
+    }
+    .navbar__s4{
+        display: block;
+    }
+ }
